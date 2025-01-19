@@ -1,0 +1,17 @@
+.udg-logo {
+    width: 350px;
+}
+
+.materia {
+    font-size: 75px;
+}
+
+.mb-2r {
+    margin-bottom: 2.5rem;
+}
+
+@media (max-width: 550px) {
+    .materia{
+        font-size: 55px;
+    }
+}
