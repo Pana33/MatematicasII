@@ -27,7 +27,8 @@ export class PersonInfoService {
         estudio de las funciones abelianas, la teoría de números y la función zeta de Riemann, cuyo análisis llevó a la famosa hipótesis que aún sigue siendo un problema abierto.\
         A pesar de sus logros, Riemann tuvo una salud frágil y murió de tuberculosis en 1866 a los 39 años, dejando un legado que ha influido profundamente en las matemáticas y\
         la física. Su obra fue inicialmente incomprendida, pero con el tiempo sus ideas fueron fundamentales para el desarrollo de nuevas ramas de las matemáticas y la física moderna.",
-      reference:"https://paginas.matem.unam.mx/cprieto/biografias/biografias-de-matematicos/biografias-de-matematicos-p-t/riemann-bernhard"
+      reference:"https://paginas.matem.unam.mx/cprieto/biografias/biografias-de-matematicos/biografias-de-matematicos-p-t/riemann-bernhard",
+      imgUrl:"https://paginas.matem.unam.mx/cprieto/images/matematicos/Riemann.jpeg"
     }
   ]
 

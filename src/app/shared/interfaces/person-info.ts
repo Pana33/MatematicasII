@@ -6,4 +6,5 @@ export interface PersonInfo {
     city:string
     aboutHim:string
     reference:string
+    imgUrl:string
 }
