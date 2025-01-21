@@ -1,1 +1,114 @@
-<p>approximate-area-under-the-curve works!</p>
+<div class="container-fluid">
+    <div class="row justify-content-center pb-4">
+        <div class="col-xl-11 col-12 pt-3">
+            <div class="container-fluid">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12">
+                        <p class="mb-1">
+                            <span class="fw-semibold">La aproximación del área bajo la curva,</span> es un método el cual consiste en graficar una función y dividir
+                            el área debajo del trazo de la función que se quiere calcular, en rectángulos, estos deben tener la misma base para después calcular el
+                            área de cada rectángulo y sumarlos, este método es conocido como la suma de <span class="show-in-modal" (click)="emitPerson('Riemann')" data-bs-toggle="modal" data-bs-target="#modal-person-info">Riemann.</span>
+                        </p>
+                        <p class="m-0">
+                            Veamos paso por paso como realizar este procedimiento, supongamos que tenemos la función <span class="fw-semibold">f(x)=2+0.04x&#178;</span>
+                        </p>
+                    </div>
+                    <div class="col-xxl-4 col-lg-6 col-12">
+                        <div class="card border-secondary" style="height: 100%;">
+                            <h5 class="card-header text-center">Paso 1</h5>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-center">Graficar la función</h6>
+                                <p class="card-text">
+                                    Empezaremos resolviendo la función y graficando el resultado para trazar una línea, para ahorrar tantos cálculos,
+                                    lo mejor es tomar el inicio del rango, el final y al menos 3 números más que estén dentro del rango seleccionado, para este ejemplo,
+                                    calcularemos el área del 0 al 6 de X por lo que podríamos tomar 0, 2, 3, 4, y 6 para resolver la función y poder trazar nuestra línea.
+                                </p>
+                            </div>
+                            <img src="../../../assets/unidad-1/aproximacion-del-area-bajo-la-curva/grafico 1.webp" class="card-img-bottom" alt="Imagen paso 1">
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-lg-6 col-12">
+                        <div class="card border-secondary" style="height: 100%;">
+                            <h5 class="card-header text-center">Paso 2</h5>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-center">Dibujar los rectángulos</h6>
+                                <p class="card-text">
+                                    Es momento de dibujar los rectángulos, para ello, dividiremos el largo del área que queremos buscar entre la cantidad de rectángulos que
+                                    vamos a dibujar (entre más rectángulos el cálculo es más exacto, pero más laborioso), en este ejemplo tenemos 6 unidades de largo, por lo
+                                    que dibujaremos 3 rectángulos para hacer el ejemplo sencillo de entender, el alto del rectángulo debe llegar hasta que la línea de la grafica
+                                    pase por justo el medio del rectángulo.
+                                </p>
+                            </div>
+                            <img src="../../../assets/unidad-1/aproximacion-del-area-bajo-la-curva/grafico 2.webp" class="card-img-bottom" alt="Imagen paso 2">
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-lg-6 col-12">
+                        <div class="card border-secondary" style="height: 100%;">
+                            <h5 class="card-header text-center">Paso 3</h5>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-center">Calcular el alto de los rectángulos</h6>
+                                <p class="card-text mb-1">
+                                    Para calcular el área de los rectángulos veremos en que punto inicia y termina cada rectángulo, la mitad de eso sería el valor que
+                                    utilizaremos para calcular nuestra función, por ejemplo, el rectángulo 2 inicia en X=2 y termina en X=4, por lo que el punto medio
+                                    del rectángulo 2, seria X=3, siguiendo la misma instrucción, tendríamos que el punto medio del rectángulo 1 es X=1 y el punto medio del 
+                                    rectángulo 3 es X=5, ahora resolvemos la función con estos 3 valores y nos dará la altura de cada rectángulo.
+                                </p>
+                                <p class="m-0">
+                                    Ver operación. <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                    </svg>
+                                </p>
+                            </div>
+                            <img src="../../../assets/unidad-1/aproximacion-del-area-bajo-la-curva/grafico 3.webp" class="card-img-bottom" alt="Imagen paso 3">
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-lg-6 col-12">
+                        <div class="card border-secondary" style="height: 100%;">
+                            <h5 class="card-header text-center">Paso 4</h5>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-center">Calcular el área bajo la curva</h6>
+                                <p class="card-text mb-1">
+                                    Una vez que tenemos la altura de cada rectángulo, calculamos el área de cada uno de estos y lo sumamos, la suma de todas las áreas
+                                    nos dará el área aproximada bajo la curva que dibujamos en el paso 1, encontramos que el área para el rectángulo 1 es de 4.08, para
+                                    el rectángulo 2 es de 4.72 y para el rectángulo 3 es de 6, por lo que el área bajo la curva es de aproximadamente 14.8
+                                </p>
+                                <p class="m-0">
+                                    Ver operación. <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                    </svg>
+                                </p>
+                            </div>
+                            <img src="../../../assets/unidad-1/aproximacion-del-area-bajo-la-curva/grafico 4.webp" class="card-img-bottom" alt="Imagen paso 4">
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-lg-6 col-12">
+                        <div class="card border-secondary" style="height: 100%;">
+                            <h5 class="card-header text-center">¿Por qué funciona?</h5>
+                            <div class="card-body">
+                                <p class="card-text mb-1">
+                                    Cuando se dibujan los rectángulos, se puede observar como una parte del rectángulo queda fuera del área que se busca calcular,
+                                    pero también, se puede observar como una parte del área que se busca calcular, falta por entrar en el cálculo, esto equilibra
+                                    hasta cierto punto la situación y es por ello que mientras más rectángulos, este cálculo es más exacto, ya que se reduce el area
+                                    tanto sobrante como faltante.
+                                </p>
+                                <p class="mb-0">
+                                    En la imagen se puede observar el área faltante de calcular en color azul y el área que se calculo en excedente de color rojo.
+                                </p>
+                            </div>
+                            <img src="../../../assets/unidad-1/aproximacion-del-area-bajo-la-curva/grafico 5.webp" class="card-img-bottom" alt="Imagen paso 3">
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-lg-6 col-12">
+                        <div class="card border-secondary" style="height: 100%;">
+                            <h5 class="card-header text-center">Simbología</h5>
+                            <div class="card-body">
+                                
+                            </div>
+                            <img src="../../../assets/unidad-1/aproximacion-del-area-bajo-la-curva/grafico 1.webp" class="card-img-bottom" alt="Imagen paso 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

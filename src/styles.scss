@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.show-in-modal {
+    font-style: italic;
+    color:dodgerblue;
+    cursor:pointer;
+    transition: all .5s;
+}
+.show-in-modal:hover {
+    color:blue;
+    background-color:ghostwhite;
+    border-radius: 5px;
+    padding-inline: 5px;
+}
