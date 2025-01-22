@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MatematicasII": {
+    "matematicasii": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -42,8 +42,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "1mb",
+                  "maximumError": "1.5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "MatematicasII:build:production"
+              "buildTarget": "matematicasii:build:production"
             },
             "development": {
-              "buildTarget": "MatematicasII:build:development"
+              "buildTarget": "matematicasii:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "MatematicasII:build"
+            "buildTarget": "matematicasii:build"
           }
         },
         "test": {
