@@ -13,7 +13,7 @@ import { PersonInfo } from '../../../shared/interfaces/person-info';
 export class ModalPersonInfoComponent implements OnInit, OnDestroy {
   private personService = inject(PersonInfoService)
   person$!:Subscription
-  person!:PersonInfo
+  person:PersonInfo | null = null
 
   ngOnInit(): void {
     this.person$ = this.personService.personToShow.subscribe(personFinded => this.person = personFinded)
