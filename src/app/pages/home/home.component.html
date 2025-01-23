@@ -9,14 +9,14 @@
         <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav ms-2 mx-lg-auto my-2 my-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" [routerLink]="pageRoutes.BOOK_COVER">Presentación</a>
+                    <a class="nav-link" aria-current="page" routerLinkActive="active" [routerLink]="pageRoutes.BOOK_COVER">Presentación</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" [ngClass]="activeRoute === 1 ? 'active' : '' " role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Unidad 1
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" [routerLink]="pageRoutes.APPROXIMATE_AREA_UNDER_THE_CURVE">Aproximación del área bajo la curva</a></li>
+                        <li><a class="dropdown-item" routerLinkActive="active" [routerLink]="pageRoutes.APPROXIMATE_AREA_UNDER_THE_CURVE">Aproximación del área bajo la curva</a></li>
                     </ul>
                 </li>
             </ul>
