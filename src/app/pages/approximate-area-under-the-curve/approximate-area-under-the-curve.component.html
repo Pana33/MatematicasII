@@ -53,7 +53,7 @@
                                     del rectángulo 2, seria X=3, siguiendo la misma instrucción, tendríamos que el punto medio del rectángulo 1 es X=1 y el punto medio del 
                                     rectángulo 3 es X=5, ahora resolvemos la función con estos 3 valores y nos dará la altura de cada rectángulo.
                                 </p>
-                                <p class="m-0">
+                                <p class="m-0 show-in-modal text-center" data-bs-toggle="modal" data-bs-target="#operations" (click)="stepClicked = 3">
                                     Ver operación. <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                                     </svg>
@@ -72,7 +72,7 @@
                                     nos dará el área aproximada bajo la curva que dibujamos en el paso 1, encontramos que el área para el rectángulo 1 es de 4.08, para
                                     el rectángulo 2 es de 4.72 y para el rectángulo 3 es de 6, por lo que el área bajo la curva es de aproximadamente 14.8
                                 </p>
-                                <p class="m-0">
+                                <p class="m-0 show-in-modal text-center" data-bs-toggle="modal" data-bs-target="#operations" (click)="stepClicked = 4">
                                     Ver operación. <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                                     </svg>
@@ -98,7 +98,7 @@
                             <img src="../../../assets/unidad-1/aproximacion-del-area-bajo-la-curva/grafico 5.webp" class="card-img-bottom" alt="Imagen paso 3">
                         </div>
                     </div>
-                    <div class="col-xxl-4 col-lg-6 col-12">
+                    <!-- <div class="col-xxl-4 col-lg-6 col-12">
                         <div class="card border-secondary" style="height: 100%;">
                             <h5 class="card-header text-center">Simbología</h5>
                             <div class="card-body">
@@ -106,9 +106,10 @@
                             </div>
                             <img src="../../../assets/unidad-1/aproximacion-del-area-bajo-la-curva/grafico 1.webp" class="card-img-bottom" alt="Imagen paso 3">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </div>
 </div>
+<app-operations [stepToSeeOperation]="stepClicked"></app-operations>
