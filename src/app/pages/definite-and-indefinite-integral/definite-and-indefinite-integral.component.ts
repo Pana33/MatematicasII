@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { PageRoutes } from '../../shared/enums/page-routes';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-definite-and-indefinite-integral',
