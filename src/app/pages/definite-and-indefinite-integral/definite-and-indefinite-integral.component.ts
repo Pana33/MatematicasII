@@ -5,7 +5,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-definite-and-indefinite-integral',
   standalone: true,
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './definite-and-indefinite-integral.component.html',
   styleUrl: './definite-and-indefinite-integral.component.scss'
 })
