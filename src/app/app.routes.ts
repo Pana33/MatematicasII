@@ -8,6 +8,7 @@ export const routes: Routes = [
         {path:'',redirectTo:PageRoutes.HOME,pathMatch:'full'},
         {path:PageRoutes.BOOK_COVER,loadComponent: () => import("./pages/book-cover/book-cover.component").then(m => m.BookCoverComponent),canActivate:[activeRouteGuard]},
         {path:PageRoutes.APPROXIMATE_AREA_UNDER_THE_CURVE,loadComponent: () => import("./pages/approximate-area-under-the-curve/approximate-area-under-the-curve.component").then(m => m.ApproximateAreaUnderTheCurveComponent),canActivate:[activeRouteGuard]},
+        {path:PageRoutes.DEFINITE_AND_INDEFINITE_INEGRAL,loadComponent: () => import("./pages/definite-and-indefinite-integral/definite-and-indefinite-integral.component").then(m => m.DefiniteAndIndefiniteIntegralComponent),canActivate:[activeRouteGuard]},
         {path:'**',redirectTo:PageRoutes.BOOK_COVER,pathMatch:'full'}
     ]},
     {path:'**',redirectTo:PageRoutes.HOME,pathMatch:'full'}
