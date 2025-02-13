@@ -3,4 +3,5 @@ export enum PageRoutes {
     BOOK_COVER = 'book-cover',
     APPROXIMATE_AREA_UNDER_THE_CURVE = 'approximate-area-under-the-curve',
     DEFINITE_AND_INDEFINITE_INEGRAL = 'definite-and-indefinite-integral',
+    INEGRAL_BY_SUSTITUTION = 'integral-by-sustitution',
 }

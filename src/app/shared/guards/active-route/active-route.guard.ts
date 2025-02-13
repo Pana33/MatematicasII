@@ -14,6 +14,10 @@ export const activeRouteGuard: CanActivateFn = (route, state) => {
     case PageRoutes.DEFINITE_AND_INDEFINITE_INEGRAL:
       routeToActivate = 1
       break
+
+    case PageRoutes.INEGRAL_BY_SUSTITUTION:
+      routeToActivate = 1
+      break
   }
   activeRouteService.changeRoute(routeToActivate)
   return true;
