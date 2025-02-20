@@ -1,1 +1,70 @@
-<p>integration-by-parts works!</p>
+<div class="container-fluid">
+    <div class="row justify-content-center pb-4">
+        <div class="col-xl-11 col-12 pt-3">
+            <div class="container-fluid">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12">
+                        <p class="mb-1">
+                            <span class="fw-semibold">La integral por partes,</span> es una operación que se utiliza para solucionar la integración separando las operaciones
+                            que se encuentran en esta y relacionandolas a un termino llamado ILATE, despues de esto, se realiza un procedimiento que es facil recordar con
+                            la frase "Un dia vi una vaca vestida de uniforme" (u dv = u v - integral(v du)), el termino ILATE es el orden de operaciones que tomaran el valor de U y la siguiente el valor
+                            de dv, cada letra significa un tipo de operacion empezando por Inversas, despues Logaritmicas, siguiendo con Algebraicas, Trigonometricas y 
+                            Exponenciales
+                        </p>
+                        <p class="m-0">
+                            Veamos paso por paso como realizar este procedimiento, supongamos que tenemos la integral <span class="fw-semibold">xCos(x)</span>
+                        </p>
+                    </div>
+                    <div class="col-xxl-4 col-lg-6 col-12">
+                        <div class="card border-secondary" style="height: 100%;">
+                            <h5 class="card-header text-center">Paso 1</h5>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-center">Identificar las operaciones</h6>
+                                <p class="card-text">
+                                    Podemos ver que tenemos x lo cual es una operacion Algebraica, mientras que Cos(x) es una operacion trigonometrica, por lo que 
+                                    segun el termino ILATE, nuestra U tendra el valor de x y dv tendra el valor de Cos(x) dx
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-lg-6 col-12">
+                        <div class="card border-secondary" style="height: 100%;">
+                            <h5 class="card-header text-center">Paso 2</h5>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-center">Encontrar du y v</h6>
+                                <p class="card-text">
+                                    Ahora trabajaremos encontrando las operaciones contrarias, mientras que U, la tenemos que derivar, dv la tendriamos que integrar,
+                                    quedando como resultado du=dx y v=sen(x)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-lg-6 col-12">
+                        <div class="card border-secondary" style="height: 100%;">
+                            <h5 class="card-header text-center">Paso 3</h5>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-center">Reemplazar valores</h6>
+                                <p class="card-text mb-1">
+                                    Teniendo en cuenta la formula de la vaquita realizamos el reemplazo, u y dv ya los encontramos, por lo que solo reemplazaremos despues
+                                    del igual teniendo asi uv - integral(v du) osea (x)(sen(x))-integral(sen(x)dx)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-lg-6 col-12">
+                        <div class="card border-secondary" style="height: 100%;">
+                            <h5 class="card-header text-center">Paso 4</h5>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-center">Resolver la integral más sencilla</h6>
+                                <p class="card-text mb-1">
+                                    Como vemos, nos ha quedado una integral bastante sencilla, la integracion del seno de x es -cos(x) por lo que podemos reemplazar en la formula
+                                    de la vaquita la integral por el valor de -cos(x) quedando asi xsen(x)-(-cos(x)) = xsen(x)+cos(x)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
