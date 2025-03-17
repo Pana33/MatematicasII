@@ -22,6 +22,14 @@
                         <li><a class="dropdown-item" routerLinkActive="active" [routerLink]="pageRoutes.INTEGRATION_BY_PARTS">Integración por partes</a></li>
                     </ul>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" [ngClass]="activeRoute === 2 ? 'active' : '' " role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Unidad 2
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLinkActive="active" [routerLink]="pageRoutes.CALCULUS_OF_SEVERAL_VARIABLES">Aproximación del área bajo la curva</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>

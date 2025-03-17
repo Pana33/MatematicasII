@@ -5,4 +5,5 @@ export enum PageRoutes {
     DEFINITE_AND_INDEFINITE_INEGRAL = 'definite-and-indefinite-integral',
     INEGRAL_BY_SUSTITUTION = 'integral-by-sustitution',
     INTEGRATION_BY_PARTS = 'integration-by-parts',
+    CALCULUS_OF_SEVERAL_VARIABLES = 'calculus-of-several-variables',
 }
