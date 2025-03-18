@@ -1,1 +1,85 @@
-<p>calculus-of-several-variables works!</p>
+<div class="container-fluid">
+    <div class="row justify-content-center pb-4">
+        <div class="col-xl-11 col-12 pt-3">
+            <div class="container-fluid">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12">
+                        <p class="mb-1">
+                            <span class="fw-semibold">El cálculo de varias variables,</span> es una operación que se utiliza para dar solución a varios problemas
+                            de varias áreas diferentes como finanzas, ciberseguridad, inteligencia artificial, etc. En este caso utilizaremos esta operación
+                            para el modelado de figuras 3D aplicando las operaciones para formar un círculo en un plano tridimensional.
+                        </p>
+                        <p class="m-0">La ecuación de una esfera está formada por (x-h)^2+(y-k)^2+(z-l)^2=r^2 por lo que teniendo la ecuación x^2+y^2+z^2-2x-4y+8z=15, debemos
+                            factorizar agrupando términos similares para llegar a la primera función establecida, vamos a ello:
+                        </p>
+                    </div>
+                    <div class="col-xxl-4 col-lg-6 col-12">
+                        <div class="card border-secondary" style="height: 100%;">
+                            <h5 class="card-header text-center">Paso 1</h5>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-center">Agrupar términos semejantes</h6>
+                                <p class="card-text">
+                                    Empezaremos reordenando los elementos de nuestra función (x^2+y^2+z^2-2x-4y+8z=15) de forma que nos queden las x con las x, las y con las y
+                                    y las z con las z, por lo que nos quedaría una operación x^2-2x+y^2-4y+z^2+8z=15
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-lg-6 col-12">
+                        <div class="card border-secondary" style="height: 100%;">
+                            <h5 class="card-header text-center">Paso 2</h5>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-center">Completar el cuadrado</h6>
+                                <p class="card-text">
+                                    Tomaremos cada binomio y los completaremos para ser un cuadrado perfecto, empezaremos con x^2-2x, tomamos la constante y lo dividimos entre 2,
+                                    luego lo elevaremos al cuadrado y finalmente, el numero restante se agregara con el signo contrario a la operación ya factorizada
+                                    como cuadrado, (-2/2)^2 = 1, por lo que la operación siendo factorizada es (x-1)^2, nos quedaría como resultado para x, (x-1)^2-1, hacemos lo 
+                                    mismo con los demás y nos quedaría (y-2)^2-4 y (z+4)^2-16
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-lg-6 col-12">
+                        <div class="card border-secondary" style="height: 100%;">
+                            <h5 class="card-header text-center">Paso 3</h5>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-center">Reemplazar los cuadrados perfectos por los binomios de la formula</h6>
+                                <p class="card-text mb-1">
+                                    Teniendo cada binomio convertido en un cuadrado perfecto, vamos a reemplazar los valores antiguos, quedando la siguiente formula
+                                    (x-1)^2-1+(y-2)^2-4+(z+4)^2-16=15
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-lg-6 col-12">
+                        <div class="card border-secondary" style="height: 100%;">
+                            <h5 class="card-header text-center">Paso 4</h5>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-center">Reagrupar semejantes y despejar la constante</h6>
+                                <p class="card-text mb-1">
+                                    Vamos a reescribir la formula reagrupando términos semejantes y despejando la constante que tenemos, por lo que la formula seria
+                                    (x-1)^2+(y-2)^2+(z+4)^2-16-1-4=15, resolviendo las constantes tendríamos (x-1)^2+(y-2)^2+(z+4)^2-21=15, ahora despejamos 
+                                    (x-1)^2+(y-2)^2+(z+4)^2=15+21 y finalmente resolvemos (x-1)^2+(y-2)^2+(z+4)^2=36
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-lg-6 col-12">
+                        <div class="card border-secondary" style="height: 100%;">
+                            <h5 class="card-header text-center">Paso 5</h5>
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-center">Encontrar el radio y el centro de la esfera</h6>
+                                <p class="card-text mb-1">                                    
+                                    Podemos observar que se parece a la forma (x-h)^2+(y-k)^2+(z-l)^2=r^2, solo falta el cuadrado de 36 que es 6, nuestra formula 
+                                    final es (x-1)^2+(y-2)^2+(z+4)^2=6^2, donde 6 es nuestro radio, para saber nuestro centro de la esfera, son las constantes 
+                                    que están dentro de cada cuadrado perfecto de cada variable con el signo contrario, C=(h,k,l), por lo que nuestro centro 
+                                    estaría en el punto (1,2,-4)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
